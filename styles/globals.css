@@ -13,6 +13,16 @@ a {
 * {
   box-sizing: border-box;
 }
+@media only screen and (max-width: 900px) {
+  section {
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width:100vw;
+  }
+}
 section {
   margin: 0 auto;
   padding-top: 10vh;

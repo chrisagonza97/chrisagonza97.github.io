@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             <div></div>
             <div className=''>
               <div className='header-content'>
-                <img alt='personal image' id='headshot' src='/FFFFFF.png' />
+                <img alt='personal image' id='headshot' src='/react_logo.png' />
                 <h1 id='my-name'>-Christopher Gonzalez-</h1>
                 <h3 id='sub-title'>Frontend Engineer/ Software Engineer</h3>
                 <div className='icon-links'>
