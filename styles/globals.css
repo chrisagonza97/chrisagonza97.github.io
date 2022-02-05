@@ -13,25 +13,17 @@ a {
 * {
   box-sizing: border-box;
 }
-@media only screen and (max-width: 900px) {
-  section {
-    margin: 0 auto;
-    padding-top: 10vh;
-    padding-bottom: 20vh;
-    padding-left: 7vw;
-    padding-right: 7vw;
-    width:100vw;
-  }
-}
+
 section {
   margin: 0 auto;
   padding-top: 10vh;
   padding-bottom: 20vh;
   padding-left: 7vw;
   padding-right: 7vw;
-  min-width: 55rem;
+  
   max-width: 60rem;
 }
+
 header {
   background-color: #ff9000;
   min-height: 100vh;
@@ -159,6 +151,34 @@ header {
   justify-content: center;
   height: 20vh;
   width: 50vh;
+}
+@media only screen and (max-width: 900px) {
+  section {
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width:100vw;
+  }
+  .logo-image-container {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 80vw;
+  }
+  .project-container {
+    position: relative;
+    margin: 0 auto;
+    height: 20vh;
+    width: 80vw;
+    z-index: 1;
+    background-color: #ff9000;
+    margin-bottom: 5vh;
+  }
+  .project-container h4{
+    font-size:16px;
+  }
 }
 .my-resume-title {
   text-align: center;
