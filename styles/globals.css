@@ -20,8 +20,8 @@ section {
   padding-bottom: 20vh;
   padding-left: 7vw;
   padding-right: 7vw;
-  
-  max-width: 60rem;
+
+  max-width: 60%;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 .header-sub-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .header-mid {
   display: grid;
@@ -82,16 +82,15 @@ header {
 .about-left {
   font: 18px 'Space Mono', Arial;
 }
-.about-center {
-  font: 18px 'Space Mono', Arial;
-  color: #949494;
+.my-value {
+  
 }
 .about-me {
   font-family: 'Space Mono', Arial;
 }
 .info-grid {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 2fr 2fr;
 }
 #about-me-greeting {
   font-family: 'Space Mono', Arial;
@@ -152,34 +151,7 @@ header {
   height: 20vh;
   width: 50vh;
 }
-@media only screen and (max-width: 900px) {
-  section {
-    margin: 0 auto;
-    padding-top: 10vh;
-    padding-bottom: 20vh;
-    padding-left: 7vw;
-    padding-right: 7vw;
-    width:100vw;
-  }
-  .logo-image-container {
-    display: flex;
-    justify-content: center;
-    height: 20vh;
-    width: 80vw;
-  }
-  .project-container {
-    position: relative;
-    margin: 0 auto;
-    height: 20vh;
-    width: 80vw;
-    z-index: 1;
-    background-color: #ff9000;
-    margin-bottom: 5vh;
-  }
-  .project-container h4{
-    font-size:16px;
-  }
-}
+
 .my-resume-title {
   text-align: center;
   font: 40px 'Space Mono', Arial;
@@ -189,6 +161,9 @@ header {
   text-align: center;
   font: 40px 'Space Mono', Arial;
   margin-bottom: 8vh;
+}
+.my-projects-container{
+  margin: 0 auto;
 }
 .my-resume-subtitle {
   text-align: center;
@@ -241,7 +216,7 @@ header {
 }
 .my-skills-container {
   background-color: #ff9000;
-  min-height: 100vh;
+  height: 106vh;
 }
 .my-skills-title {
   text-align: center;
@@ -403,4 +378,62 @@ textarea {
   -moz-transform: translateY(-5px);
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.highlight-yellow{
+  background-color:rgba(239, 255, 0, 0.5)
+}
+.highlight-red{
+  background-color:rgba(255, 16, 0, 0.5)
+}
+@media only screen and (max-width: 1024px) {
+  section {
+    margin: 0 auto;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    width: 100vw;
+    max-width:60rem;
+  }
+  .logo-image-container {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 80vw;
+  }
+  
+  .project-container {
+    position: relative;
+    margin: 0 auto;
+    height: 20vh;
+    width: 80vw;
+    z-index: 1;
+    background-color: #ff9000;
+    margin-bottom: 5vh;
+  }
+  .project-container h4 {
+    font-size: 14px;
+  }
+  .info-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-item-container {
+    display: flex;
+    overflow: scroll;
+  }
+  .my-skills-container {
+    height: 50vh;
+  }
+  .skill-item {
+    margin-right: 1rem;
+  }
+  .skill-item h3 {
+    font-size: 16px;
+  }
+  
+  .header-mid {
+   
+    grid-template-rows: 1fr 5fr 1fr;
+  }
 }

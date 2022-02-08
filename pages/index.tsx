@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <div className='header-sub-container'>
           <div className='header-left'></div>
           <div className='header-mid '>
-            <div></div>
+            <div className='empty-div'></div>
             <div className=''>
               <div className='header-content'>
                 <img alt='personal image' id='headshot' src='/react_logo.png' />
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div className='empty-div'></div>
           </div>
           <div className='header-right'></div>
         </div>
@@ -70,14 +70,12 @@ const Home: NextPage = () => {
             <div className='about-left'>
               <p>
                 <strong>Full Name:</strong>
+                <p className='my-value'>Christopher Gonzalez</p>
               </p>
               <p>
                 <strong>E-mail:</strong>
+                <p className='my-value'>chris.a.gonzalez97@gmail.com</p>
               </p>
-            </div>
-            <div className='about-center'>
-              <p>Christopher Gonzalez</p>
-              <p>chris.a.gonzalez97@gmail.com</p>
             </div>
           </div>
           <h2 id='about-me-greeting'>Hello!</h2>
@@ -113,40 +111,48 @@ const Home: NextPage = () => {
             <FaSuitcase size={30} />
           </div>
           <div className='timeline-right'>
-            <div className='timeline-align-right'>
+            <div className='timeline-align-left'>
               <h3 className='timeline-role'>Research Assitant</h3>
               <p className='timeline-time'>October 2019 - October 2021 </p>
               <p className='timeline-description'>
                 Participated in an NSF project titled, ”Optimal and Efficient
                 Resource Allocation in Policy-Driven Data Centers: A Network
                 Flow Approach” under Dr. Bin Tang at CSU Dominguez Hills
+                <br />
                 Collected, plotted, and analyzed data from the different
                 algorithms in order to draw conclusions for paper submission
+                <br />
                 Presented progress and ideas for paper as well as relevant
-                publications Gave a presentation in IEEE ICCCN 2020 on our
-                published paper <br />
+                publications
+                <br /> Gave a presentation in IEEE ICCCN 2020 on our published
+                paper <br />
                 <strong>Key Accomplishments:</strong>
                 <ul>
                   <li>
                     Our paper entitled "Throughput Maximization of Virtual
                     Machine Communications in Bandwidth-Constrained Data
-                    Centers" was published at the IEEE GLOBECOM 2021
+                    Centers" was{' '}
+                    <span className='highlight-yellow'>published</span> at the
+                    IEEE GLOBECOM 2021
                   </li>
                   <li>
                     Our paper entitled "FT-VMP: Fault-Tolerant Virtual Machine
-                    Placement in Cloud Data Centers" was published in IEEE's
-                    International Conference on Computer Communications and
-                    Networks 2020
+                    Placement in Cloud Data Centers" was{' '}
+                    <span className='highlight-yellow'>published</span> in
+                    IEEE's International Conference on Computer Communications
+                    and Networks 2020
                   </li>
                   <li>
                     Our paper entitled “Performance Comparison of Fault-Tolerant
                     Virtual Machine Placement Algorithms in Cloud Data Centers”
-                    was published at 1st Annual Computer Science Conference for
-                    CSU Undergraduates (2021)
+                    was <span className='highlight-yellow'>published</span> at
+                    1st Annual Computer Science Conference for CSU
+                    Undergraduates (2021)
                   </li>
                   <li>
                     Developed server consolidation algorithm that can turn off
-                    up to 40-50% more servers than existing work
+                    up to <span className='highlight-yellow'>40-50%</span> more
+                    servers than existing work
                   </li>
                 </ul>
               </p>
