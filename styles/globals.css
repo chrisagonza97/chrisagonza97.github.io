@@ -385,9 +385,11 @@ textarea {
 }
 .highlight-yellow {
   background-color: rgba(239, 255, 0, 0.5);
+  
 }
 .highlight-red {
   background-color: rgba(255, 16, 0, 0.5);
+  
 }
 @media only screen and (max-width: 1024px) {
   section {
