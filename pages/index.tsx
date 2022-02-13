@@ -202,7 +202,7 @@ const Home: NextPage = () => {
           id='resume-link'
           href='https://docs.google.com/document/d/1uo_zy8z0H4MdOjOcuEIoH76EutBx4PnMtIdrirL9C6c/edit?usp=sharing'
         >
-          <h3 className='my-resume-subtitle animated animatedFadeInUp fadeInUp'>
+          <h3 className='my-resume-subtitle my-resume-link animated animatedFadeInUp fadeInUp'>
             Link to my Resume
           </h3>
         </a>

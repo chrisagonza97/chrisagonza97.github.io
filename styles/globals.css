@@ -175,6 +175,10 @@ header {
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
 }
+.my-resume-link{
+  background-color:#2200ff;
+  color: #dddddd;
+}
 .experience-timeline {
   display: grid;
   grid-template-columns: 1fr 5fr;
