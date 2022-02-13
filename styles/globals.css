@@ -17,7 +17,7 @@ a {
 section {
   margin: 0 auto;
   padding-top: 10vh;
-  padding-bottom: 20vh;
+  padding-bottom: 5vh;
   padding-left: 7vw;
   padding-right: 7vw;
 
@@ -83,7 +83,6 @@ header {
   font: 18px 'Space Mono', Arial;
 }
 .my-value {
-  
 }
 .about-me {
   font-family: 'Space Mono', Arial;
@@ -144,6 +143,7 @@ header {
 .logo-image {
   max-height: 100%;
   width: auto;
+  border-radius: 50%;
 }
 .logo-image-container {
   display: flex;
@@ -162,7 +162,7 @@ header {
   font: 40px 'Space Mono', Arial;
   margin-bottom: 8vh;
 }
-.my-projects-container{
+.my-projects-container {
   margin: 0 auto;
 }
 .my-resume-subtitle {
@@ -379,21 +379,21 @@ textarea {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.highlight-yellow{
-  background-color:rgba(239, 255, 0, 0.5)
+.highlight-yellow {
+  background-color: rgba(239, 255, 0, 0.5);
 }
-.highlight-red{
-  background-color:rgba(255, 16, 0, 0.5)
+.highlight-red {
+  background-color: rgba(255, 16, 0, 0.5);
 }
 @media only screen and (max-width: 1024px) {
   section {
     margin: 0 auto;
     padding-top: 10vh;
-    padding-bottom: 20vh;
+    padding-bottom: 5vh;
     padding-left: 7vw;
     padding-right: 7vw;
     width: 100vw;
-    max-width:60rem;
+    max-width: 60rem;
   }
   .logo-image-container {
     display: flex;
@@ -401,7 +401,7 @@ textarea {
     height: 20vh;
     width: 80vw;
   }
-  
+
   .project-container {
     position: relative;
     margin: 0 auto;
@@ -431,9 +431,8 @@ textarea {
   .skill-item h3 {
     font-size: 16px;
   }
-  
+
   .header-mid {
-   
     grid-template-rows: 1fr 5fr 1fr;
   }
 }

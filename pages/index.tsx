@@ -22,7 +22,8 @@ import {
   SiTypescript,
   SiYarn,
 } from 'react-icons/si';
-
+// <span className='highlight-yellow'></span>
+// <span className='highlight-red'></span>
 const Home: NextPage = () => {
   return (
     <div>
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
           href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap'
           rel='stylesheet'
         />
+        <title>Christopher Gonzalez's site</title>
       </Head>
       <header>
         <div className='header-sub-container'>
@@ -74,20 +76,32 @@ const Home: NextPage = () => {
               </p>
               <p>
                 <strong>E-mail:</strong>
-                <p className='my-value'>chris.a.gonzalez97@gmail.com</p>
+                <p className='my-value'>
+                  <span className='highlight-yellow'>
+                    chris.a.gonzalez97@gmail.com
+                  </span>{' '}
+                </p>
               </p>
             </div>
           </div>
           <h2 id='about-me-greeting'>Hello!</h2>
           <p id='about-me-para'>
-            My name is Christopher Gonzalez, a react front-end developer with a
-            strong portfolio. I am well versed in the front-end ecosystem and
-            quick to adapt to new technologies that arise.
-            <br /> I was a Research Assistant for the CSUDH Computer Science
-            Department starting October 2019 for two years. I graduated with a
-            B.S in Computer science in Spring 2020, and did research with Dr.
-            Tang and the Computer Science Department from October 2019 to
-            October 2021. Now, my goal is to get a Frontend Engineer role.
+            My name is Christopher Gonzalez, a{' '}
+            <span className='highlight-red'>react</span> front-end developer
+            with a strong portfolio. I am well versed in the front-end ecosystem
+            and quick to adapt to new technologies that arise.
+            <br /> I was a{' '}
+            <span className='highlight-red'>Research Assistant</span> for the{' '}
+            <span className='highlight-yellow'>
+              CSUDH Computer Science Department
+            </span>{' '}
+            starting October 2019 for two years. I graduated with a{' '}
+            <span className='highlight-yellow'>B.S in Computer Science</span> in
+            Spring 2020, and did research with Dr. Tang and the Computer Science
+            Department from October 2019 to October 2021. Now, my goal is for my
+            next role to be a{' '}
+            <span className='highlight-yellow'>Frontend/Software Engineer</span>{' '}
+            .
           </p>
           <div className='icon-links'>
             <a href='https://www.linkedin.com/in/christopher-gonzalez-646234186/'>
@@ -117,15 +131,21 @@ const Home: NextPage = () => {
               <p className='timeline-description'>
                 Participated in an NSF project titled, ”Optimal and Efficient
                 Resource Allocation in Policy-Driven Data Centers: A Network
-                Flow Approach” under Dr. Bin Tang at CSU Dominguez Hills
+                Flow Approach” with Dr. Bin Tang at{' '}
+                <span className='highlight-red'>
+                  CSU Dominguez Hills Computer Science Department
+                </span>
                 <br />
-                Collected, plotted, and analyzed data from the different
-                algorithms in order to draw conclusions for paper submission
+                <span className='highlight-yellow'>
+                  Collected, plotted, and analyzed data
+                </span>{' '}
+                from different algorithms in order to draw conclusions for paper
+                submission
                 <br />
                 Presented progress and ideas for paper as well as relevant
                 publications
-                <br /> Gave a presentation in IEEE ICCCN 2020 on our published
-                paper <br />
+                <br /> Presented our paper published in{' '}
+                <span className='highlight-red'>IEEE ICCCN 2020</span> <br />
                 <strong>Key Accomplishments:</strong>
                 <ul>
                   <li>
@@ -180,7 +200,7 @@ const Home: NextPage = () => {
         </div>
         <a
           id='resume-link'
-          href='https://docs.google.com/document/d/1c7J-Gu5PkZto32Xd94Ni4y2mAYxuZK0PaSSJxBub8DM/edit?usp=sharing'
+          href='https://docs.google.com/document/d/1uo_zy8z0H4MdOjOcuEIoH76EutBx4PnMtIdrirL9C6c/edit?usp=sharing'
         >
           <h3 className='my-resume-subtitle animated animatedFadeInUp fadeInUp'>
             Link to my Resume
@@ -316,7 +336,7 @@ const Home: NextPage = () => {
               <div className='logo-image-container'>
                 <img
                   alt='reddit logo image'
-                  id='logo-image'
+                  className='logo-image'
                   src='/reddit_logo.png'
                 />
               </div>
